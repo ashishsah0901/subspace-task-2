@@ -1,0 +1,45 @@
+.contactinfo {
+    width: fit-content;
+    margin: auto;
+}
+
+.contactinfo > form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contactinfo_inputs {
+    margin: 10px 0px;
+}
+
+.contactinfo_inputs > label {
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.contactinfo_inputs > label > span {
+    color: #ea534c;
+}
+
+.contactinfo_inputs > input {
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .contactinfo {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .contactinfo_inputs > label {
+        font-size: 12px;
+    }
+
+    .contactinfo_inputs > input {
+        padding: 5px 5px;
+    }
+}
